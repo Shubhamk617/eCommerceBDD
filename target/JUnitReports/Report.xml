@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="133.884">
+    <testcase classname="test the functionality of an eCommerce Platform" name="Registration and Add to Cart" time="82.165">
+        <system-out><![CDATA[Given ecommerce Website is launched Successfully............................passed
+Then wait for pageLoad and verify the application loaded....................passed
+Given User is on Homepage...................................................passed
+When User clicks on Create an account link..................................passed
+And Fill in the Details of the page click on Continue.......................passed
+Then Click on Contact link..................................................passed
+And Type the Enquiry in Enquiry Box.........................................passed
+And Click on Submit and Continue............................................passed
+When User Click on Samsung Tab Image........................................passed
+And Click on Review Tab.....................................................passed
+And Fill in details for Review with rating 5................................passed
+And Click on Continue.......................................................passed
+And Click on add to wishlist................................................passed
+And Close the success ribbon message on the page............................passed
+And Click on Wishlist link..................................................passed
+And Click on Pound Sterling.................................................passed
+And Retrieve the value and display Pound value..............................passed
+And Click on Euro Sterling..................................................passed
+And Retrieve the value and display Euro value...............................passed
+And Click on US Dollar Sterling.............................................passed
+And Retrieve the value and display US Dollar value..........................passed
+And Click on Add To Cart icon...............................................passed
+And Close the success message on the page...................................passed
+And Click Remove icon on the product in My Wishlist page....................passed
+And Click on continue from wishlist page....................................passed
+Then Click on Logout........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="test the functionality of an eCommerce Platform" name="Product Comparison" time="51.534">
+        <system-out><![CDATA[Given ecommerce Website is launched Successfully............................passed
+Then wait for pageLoad and verify the application loaded....................passed
+Given User is on Homepage...................................................passed
+When User CLicks On Login Link..............................................passed
+And Enter Email Address and Password and click on Login button..............passed
+Then Enter the key word in search text box and Hit Enter....................passed
+And Select Monitors under Components in the drop down and Check Search in sub categories and click Search.passed
+Then Click on Phones and PDA................................................passed
+And Sort from the Price high to low on the page.............................passed
+Then Click on Add to Compare for the first three phones and click on Close button.passed
+And Click on Product Compare................................................passed
+Then Click on the first phone link on the page..............................passed
+And Check the fifth feature in the description section of the phone and write into flat file..passed
+And Click On the Add to cart button from PDP................................passed
+Then Click on Shopping Cart displayed on ribbon message.....................passed
+]]></system-out>
+    </testcase>
+</testsuite>

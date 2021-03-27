@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>eCommerceBDD</td>
+                          <td>1</td>
+                        <td>27 Mar 2021, 10:51</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepDef.HooksSteps.CloseBrowser()</td>
+                <td>2</td>
+                <td class="duration" data-value="1476523300">1s 476ms</td>
+                <td class="duration" data-value="738261650">738ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.HooksSteps.openBrowser()</td>
+                <td>2</td>
+                <td class="duration" data-value="4464001000">4s 464ms</td>
+                <td class="duration" data-value="2232000500">2s 232ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.AddToCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="2143211100">2s 143ms</td>
+                <td class="duration" data-value="2143211100">2s 143ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.ClickOnAddtoWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="2182451400">2s 182ms</td>
+                <td class="duration" data-value="2182451400">2s 182ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.ClickOnContinieRevs()</td>
+                <td>1</td>
+                <td class="duration" data-value="2173974800">2s 173ms</td>
+                <td class="duration" data-value="2173974800">2s 173ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.ClickOnReviewTab()</td>
+                <td>1</td>
+                <td class="duration" data-value="2090092000">2s 090ms</td>
+                <td class="duration" data-value="2090092000">2s 090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.ClickOnSamsunTabImage()</td>
+                <td>1</td>
+                <td class="duration" data-value="3565629200">3s 565ms</td>
+                <td class="duration" data-value="3565629200">3s 565ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.ClickOnSubmitAndContinueToHomepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="5479529900">5s 479ms</td>
+                <td class="duration" data-value="5479529900">5s 479ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickOnContactUs()</td>
+                <td>1</td>
+                <td class="duration" data-value="2251640700">2s 251ms</td>
+                <td class="duration" data-value="2251640700">2s 251ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickOnRegister()</td>
+                <td>1</td>
+                <td class="duration" data-value="3464328500">3s 464ms</td>
+                <td class="duration" data-value="3464328500">3s 464ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickWishlistLink()</td>
+                <td>1</td>
+                <td class="duration" data-value="2322840200">2s 322ms</td>
+                <td class="duration" data-value="2322840200">2s 322ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickonDollarSterling()</td>
+                <td>1</td>
+                <td class="duration" data-value="4469855900">4s 469ms</td>
+                <td class="duration" data-value="4469855900">4s 469ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickonEuro()</td>
+                <td>1</td>
+                <td class="duration" data-value="4393399800">4s 393ms</td>
+                <td class="duration" data-value="4393399800">4s 393ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.clickonPoundSterling()</td>
+                <td>1</td>
+                <td class="duration" data-value="4356471300">4s 356ms</td>
+                <td class="duration" data-value="4356471300">4s 356ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.closeSuccessButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2071052400">2s 071ms</td>
+                <td class="duration" data-value="2071052400">2s 071ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.closeSuccessMsg()</td>
+                <td>1</td>
+                <td class="duration" data-value="2057226600">2s 057ms</td>
+                <td class="duration" data-value="2057226600">2s 057ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.continueFromWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="2275475000">2s 275ms</td>
+                <td class="duration" data-value="2275475000">2s 275ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.displayDollarVals()</td>
+                <td>1</td>
+                <td class="duration" data-value="1041217000">1s 041ms</td>
+                <td class="duration" data-value="1041217000">1s 041ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.displayEuroVals()</td>
+                <td>1</td>
+                <td class="duration" data-value="1058893800">1s 058ms</td>
+                <td class="duration" data-value="1058893800">1s 058ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.displayPoundVals()</td>
+                <td>1</td>
+                <td class="duration" data-value="1052047100">1s 052ms</td>
+                <td class="duration" data-value="1052047100">1s 052ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.enterEnquiry()</td>
+                <td>1</td>
+                <td class="duration" data-value="2263633600">2s 263ms</td>
+                <td class="duration" data-value="2263633600">2s 263ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.fillReviewDetails(int)</td>
+                <td>1</td>
+                <td class="duration" data-value="6746749300">6s 746ms</td>
+                <td class="duration" data-value="6746749300">6s 746ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.fillTheForm()</td>
+                <td>1</td>
+                <td class="duration" data-value="8039903700">8s 039ms</td>
+                <td class="duration" data-value="8039903700">8s 039ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.launchWebsite()</td>
+                <td>2</td>
+                <td class="duration" data-value="4304006100">4s 304ms</td>
+                <td class="duration" data-value="2152003050">2s 152ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.logOut()</td>
+                <td>1</td>
+                <td class="duration" data-value="5371510600">5s 371ms</td>
+                <td class="duration" data-value="5371510600">5s 371ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.removeFromWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="4327980000">4s 327ms</td>
+                <td class="duration" data-value="4327980000">4s 327ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.userOnHomepage()</td>
+                <td>2</td>
+                <td class="duration" data-value="356025700">356ms</td>
+                <td class="duration" data-value="178012850">178ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommFirstScenarioStepDef.waitForLoad()</td>
+                <td>2</td>
+                <td class="duration" data-value="2121570200">2s 121ms</td>
+                <td class="duration" data-value="1060785100">1s 060ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.checkFithDescription()</td>
+                <td>1</td>
+                <td class="duration" data-value="1086911900">1s 086ms</td>
+                <td class="duration" data-value="1086911900">1s 086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickAddToCartPDP()</td>
+                <td>1</td>
+                <td class="duration" data-value="5164552900">5s 164ms</td>
+                <td class="duration" data-value="5164552900">5s 164ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickAddToCompare()</td>
+                <td>1</td>
+                <td class="duration" data-value="7522526000">7s 522ms</td>
+                <td class="duration" data-value="7522526000">7s 522ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickOnCompare()</td>
+                <td>1</td>
+                <td class="duration" data-value="2539290800">2s 539ms</td>
+                <td class="duration" data-value="2539290800">2s 539ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickOnFirstPhone()</td>
+                <td>1</td>
+                <td class="duration" data-value="3685056100">3s 685ms</td>
+                <td class="duration" data-value="3685056100">3s 685ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickOnLogin()</td>
+                <td>1</td>
+                <td class="duration" data-value="3465693200">3s 465ms</td>
+                <td class="duration" data-value="3465693200">3s 465ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickPhoneTab()</td>
+                <td>1</td>
+                <td class="duration" data-value="2464371500">2s 464ms</td>
+                <td class="duration" data-value="2464371500">2s 464ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.clickonShoppingCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="3813624600">3s 813ms</td>
+                <td class="duration" data-value="3813624600">3s 813ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.enterKeySearch()</td>
+                <td>1</td>
+                <td class="duration" data-value="3607033500">3s 607ms</td>
+                <td class="duration" data-value="3607033500">3s 607ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.enterLoginDetails()</td>
+                <td>1</td>
+                <td class="duration" data-value="5107500200">5s 107ms</td>
+                <td class="duration" data-value="5107500200">5s 107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.selectCategories()</td>
+                <td>1</td>
+                <td class="duration" data-value="4744818200">4s 744ms</td>
+                <td class="duration" data-value="4744818200">4s 744ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.eCommSecondScenarioStepDef.selectSort()</td>
+                <td>1</td>
+                <td class="duration" data-value="2447924600">2s 447ms</td>
+                <td class="duration" data-value="2447924600">2s 447ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>40</td>
+              <td>45</td>
+              <td class="duration">2m 13s 570ms</td>
+              <td class="duration">2s 968ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
